@@ -20,7 +20,9 @@
   "scripts": {
     "release": "changelog && git push --follow-tags && yarn publish --access public --non-interactive",
     "build": "sh ./build.sh",
-    "bundle": "rollup -c"
+    "bundle": "rollup -c",
+    "prepublishOnly": "yarn build",
+    "lint": "tslint -p tsconfig.json"
   },
   "files": [
     "dist",
@@ -34,6 +36,8 @@
   "devDependencies": {
     "@types/react": "^16.8.17",
     "changelog.md": "^1.1.0",
+    "husky": "^2.2.0",
+    "lint-staged": "^8.1.6",
     "rollup": "^1.11.3",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^9.3.4",
