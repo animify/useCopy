@@ -1,6 +1,29 @@
-# useCopy ⚡️
+# useCopy 📋
 
  A React Hook that provides an easy interface to copy textual data.
+ 
+ ```js
+import React from 'react';
+import useCopy from 'use-copy';
+
+function Count() {
+    const [copied, copy, setCopied] = useCopy("Text to copy");
+
+    const copyText = () => {
+      copy();
+
+      setTimeout(() => {
+        setCopied(false);
+      }, 3000);
+    };
+
+    return (
+        <div>
+            { copied ? "Copied to clipboard" : <a onClick={copyText}>Copy text</a>
+        </div>
+    );
+}
+```
 
 ## Install
 
@@ -11,6 +34,14 @@ yarn add use-copy
 # NPM
 npm install use-copy
 ```
+
+## Features
+
+- Feather light
+- Pass dynamic text
+- Easy interface
+- Full Typescript support
+- Uses the battle-tested ![copy-to-clipboard](https://github.com/sudodoki/copy-to-clipboard)
 
 ## Prerequisites
 
