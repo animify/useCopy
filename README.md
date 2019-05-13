@@ -19,11 +19,13 @@ function Count() {
 
     return (
         <div>
-            { copied ? "Copied to clipboard" : <a onClick={copyText}>Copy text</a>
+            { copied ? "Copied to clipboard" : <a onClick={copyText}>Copy text</a> }
         </div>
     );
 }
 ```
+
+![Full example on Code Sandbox](https://codesandbox.io/s/101qo4m9n3)
 
 ## Install
 
