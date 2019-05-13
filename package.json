@@ -1,0 +1,61 @@
+{
+  "name": "use-copy",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "umd": "dist/index.umd.js",
+  "module": "dist/index.m.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/animify/useCopy.git"
+  },
+  "keywords": [
+    "copy",
+    "use-copy",
+    "react hook",
+    "react hooks",
+    "useCopy"
+  ],
+  "author": "Stefan Mansson <stefan.aotik@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "release": "changelog && git push --follow-tags && yarn publish --access public --non-interactive",
+    "build": "sh ./build.sh",
+    "bundle": "rollup -c"
+  },
+  "files": [
+    "dist",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.17",
+    "changelog.md": "^1.1.0",
+    "rollup": "^1.11.3",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-resolve": "^4.2.4",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-typescript2": "^0.21.0",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": "yarn run lint"
+  },
+  "dependencies": {
+    "copy-to-clipboard": "^3.2.0"
+  }
+}
