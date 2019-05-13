@@ -1,3 +1,11 @@
+## [Version 0.0.2](https://github.com/animify/useCopy/releases/tag/v0.0.2) (2019-5-13)
+
+### Bug fixes
+
+- use lower version of React peer dep: [`b7dd754`](https://github.com/animify/useCopy/commit/b7dd754)
+
+[...full changes](https://github.com/animify/useCopy/compare/v0.0.1...v0.0.2)
+
 ## [Version 0.0.1](https://github.com/animify/useCopy/releases/tag/v0.0.1) (2019-5-13)
 
 ### New features
