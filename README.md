@@ -25,7 +25,7 @@ function Count() {
 }
 ```
 
-![Full example on Code Sandbox](https://codesandbox.io/s/101qo4m9n3)
+[Full example on Code Sandbox](https://codesandbox.io/s/101qo4m9n3)
 
 ## Install
 
@@ -43,7 +43,7 @@ npm install use-copy
 - Pass dynamic text
 - Easy interface
 - Full Typescript support
-- Uses the battle-tested ![copy-to-clipboard](https://github.com/sudodoki/copy-to-clipboard)
+- Uses the battle-tested [copy-to-clipboard](https://github.com/sudodoki/copy-to-clipboard)
 
 ## Prerequisites
 
@@ -51,8 +51,8 @@ npm install use-copy
 
 ## Issues & suggestions
 
-If you find any runtime issues or have any suggestions on how to improve the package please do open an ![issue](https://github.com/animify/useCopy/issues)!
+If you find any runtime issues or have any suggestions on how to improve the package please do open an [issue](https://github.com/animify/useCopy/issues)!
 
 ## License
 
-![MIT License](LICENSE)
+[MIT License](LICENSE)
