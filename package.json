@@ -31,7 +31,7 @@
     "LICENSE"
   ],
   "peerDependencies": {
-    "react": "^16.8.6"
+    "react": "^16.7.0-alpha.0"
   },
   "devDependencies": {
     "@types/react": "^16.8.17",
